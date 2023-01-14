@@ -38,7 +38,7 @@ nav a {
 
 }
 
-.fa-solid {
+#fa-icon {
     margin-right: 30px;
     font-size: 16px;
     color: #3A3A3A;
@@ -52,6 +52,7 @@ nav a {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 .banner-text {
@@ -83,9 +84,106 @@ nav a {
     border-radius: 40px;
     border: 0;
     padding: 15px;
+    margin-bottom: 80px;
 }
-#btn-icon{
+
+#btn-icon {
     color: #FFFFFF;
     margin-left: 5px;
 
+}
+
+#btn-see {
+    background: #FFFFFF;
+    float: right;
+    color: #E02C6D;
+    margin-top: 20px;
+}
+
+/* logos styles */
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background: #fffafa;
+
+}
+
+
+/* Popular Collection style */
+.container {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection {
+    background: #f3f2f2;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+.collection-title {
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+}
+
+.collection-rate {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: #FB8200;
+}
+
+.collection-detail {
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+}
+
+/* features styles */
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #0A0826;
+
+
+}
+
+.feature-detail {
+    font-weight: 700;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.feature-text {
+    width: 50%;
 }
