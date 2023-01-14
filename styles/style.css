@@ -1,25 +1,27 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
-    margin: 0px 80px;
     background: #FFFFFF;
 }
 
 
 /* header style */
+header{
+    margin: 0px 80px;
+}
 .header-title {
     font-weight: 700;
     font-size: 24px;
     color: #3A3A3A;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul {
+.link {
     display: flex;
 
 }
@@ -114,6 +116,7 @@ nav a {
 /* Popular Collection style */
 .container {
     margin-top: 100px;
+    margin: 0px 80px;
     margin-bottom: 200px;
 }
 
@@ -166,8 +169,9 @@ nav a {
 /* features styles */
 .features {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .feature-title {
@@ -186,4 +190,72 @@ nav a {
 
 .feature-text {
     width: 50%;
+}
+/* footer styles */
+.footer{
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+
+}
+.footer img{
+    padding-right: 20px;
+}
+
+/* Responsive styles */
+
+/* mobile device */
+@media screen and (max-width: 576px) {
+    .nav, .link{
+        flex-direction: column;
+    }
+    .banner, .logos, .features{
+        flex-direction: column-reverse;
+        padding: 15px;
+       
+    }
+    .container {
+        margin: 0;
+
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+       padding: 20px;
+    }
+
+}
+
+/* tablet device */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .nav, .link{
+        flex-direction: column;
+    }
+    .banner, .logos, .features{
+        flex-direction: column-reverse;
+        padding: 15px;
+       
+    }
+    .container {
+        margin: 0;
+
+    }
+    .banner-image img{
+        width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(2, 1fr);
+       padding: 20px;
+    }
+
 }
